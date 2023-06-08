@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <head>
+        <meta charset="utf-8">
+        <title>TechnoTUT XR</title>
+        <meta name="description" content="TechnoTUT Event AR">
+        <meta property="og:title" content="TechnoTUT XR">
+        <meta property="og:description" content="TechnoTUT Event AR">
+        <meta property="og:image" content="https://pbs.twimg.com/profile_banners/3164830272/1463853541/1500x500">
+        <meta property="og:url" content="https://ar.technotut.net/">
+        <link rel="icon" href="https://f4.bcbits.com/img/0032011067_10.jpg">
+        <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body style="margin : 0px; overflow: hidden;">
+    <!-- minimal loader shown until image descriptors are loaded -->
+    <div class="arjs-loader">
+      <div>Loading, please wait...</div>
+    </div>
+
+  <div>
+    <a-scene
+      vr-mode-ui="enabled: false;"
+      renderer="logarithmicDepthBuffer: true; precision: medium;"
+      embedded
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+    >
+      <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+      <a-nft
+        type="nft"        
+        url="/Fx2Gl-jaEAE-nU7"
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5"
+      >
+      <a-entity
+        gltf-model="./assets/pioneer_cdj_3000/scene.gltf"
+        scale="200 200 200"
+        position="0 150 50"
+        rotation="-90 0 0">
+      </a-entity>
+      <a-image
+        src="https://pbs.twimg.com/profile_images/958919709503598593/cFHqQ92E_400x400.jpg"
+        width="100"
+        height="100"
+        position="-75 0 0"
+        rotation="-90 0 0">
+      </a-image>
+      <a-image
+        src="./assets/welcome.png"
+        width="100"
+        height="100"
+        position="75 0 0"
+        rotation="-90 0 0">
+      </a-image>
+      </a-nft>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </div>
+</html>
