@@ -1,4 +1,4 @@
-2023/06/10学内イベントでのWebARの成果物。  
+WebARを用いたAR名刺とARフライヤー。  
 https://ar.technotut.net/ にて公開中。
 
 ## Credits
